@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Poppins&display=swap');
+
+body{
+    background: linear-gradient(45deg, #000000, #0a1c3a, #0e2310);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+}
+
+.home{
+    height: 100vh;
+}
+
+.hamburger{
+    z-index: 1;
+}
+.container{
+    width: 40px;
+    height: 50px;
+    margin: 40px 0 0 15px;
+    cursor: pointer;
+}
+
+.line{
+    background-color: #90ee90;
+    height: 4px;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    transition: .5s ease;
+}
+.line1{
+    transform: translateY(-10px);
+}
+.line3{
+    transform: translateY(10px);
+}
+
+.navMain{
+    display: none;
+    transition: .5s ease;
+}
+.navMain ul{
+    margin-left: 15px;
+    padding: 0 20px;
+    transform: translateY(-10px);
+}
+.navMain li{
+    list-style: none;
+    padding: 10px 0;
+    transition: .5s ease;
+}
+.navMain li a{
+    text-decoration: none;
+    color: #bbbbbb;
+    font-size: 1.5rem;
+}
+.navMain li a:hover{
+    color: #90ee90;
+}
+
+.menuBackground{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 0;
+    margin: 40px 0 0 15px;
+    background: radial-gradient(circle, #004916, #022002);
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+/* ONCLICK */
+.active{
+    display: block;
+}
+.active .line{
+    background-color: #f18c8c;
+}
+.active .line1{
+    transform: translateY(5px) rotateZ(-45deg);
+}
+.active .line2{
+    opacity: 0;
+}
+.active .line3{
+    transform: translateY(-5px) rotateZ(45deg);
+}
+
+.activeBG{
+    width: 720px;
+    height: 600px;
+    transform: translate(-60%, -30%);
+    z-index: -1;
+}
