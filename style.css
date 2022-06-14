@@ -2,10 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Poppins&display=swap');
 
 body{
-    background: linear-gradient(45deg, #000000, #0a1c3a, #0e2310);
+    background: blue;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Dosis', sans-serif;
+    animation: animatedBG 5s infinite;
+}
+
+@keyframes animatedBG{
+    0% {background: blue;}
+    25% {background: red;}
+    50% {background: red;}
+    100% {background: blue;}   
 }
 
 .home{
